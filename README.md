@@ -19,14 +19,14 @@ A web application designed to help users plan and manage their trips efficiently
 
 ### Prerequisites
 
-- Node.js (version 16 or higher)
+- Node.js 18.18.2
 
 ### Installation
 
 1. **Clone the Repository**
 
     ```bash
-    git clone https://github.com/hala-s/Travel-App.git
+    git clone https://github.com/TasbeehNaser99/Travel-App.git
     cd travel-app
     ```
 
