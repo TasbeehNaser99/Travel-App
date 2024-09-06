@@ -48,8 +48,6 @@ function calculateTripLength(startDate, endDate) {
     const dayDifference = timeDifference / (1000 * 3600 * 24);
     return Math.round(dayDifference) - 1; 
 }
-
-
 // Function to display trip details in the UI
 const renderTripDetails = (geoCoordinates, weatherForecast, locationImage, start, end, tripLength) => {
     const tripDetailsContainer = document.getElementById('trip-info');

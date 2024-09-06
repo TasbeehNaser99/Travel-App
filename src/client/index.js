@@ -26,3 +26,13 @@ document.getElementById('travel-form').addEventListener('submit', async (event) 
         alert('Failed to retrieve trip details. Please check your input and try again later.');
     }
 });
+if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('/service-worker.js')
+      .then((registration) => {
+        console.log('Service Worker registered with scope: ', registration.scope);
+      }).catch((error) => {
+        console.error('Service Worker registration failed: ', error);
+      });
+    });
+  }
